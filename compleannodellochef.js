@@ -23,7 +23,7 @@ async function getChefBirthday(id) {
         console.log(error)
         throw Error ("errore fetch chef", error) 
     }
-    if (!chef){
+    if (chef.message){
         throw Error ("errore fetch receipe non trovata") 
     }
 
